@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "kyo" {
-  bucket = "lovelybucket"
+  bucket = "lovetheebucket"
   acl    = "private"
 
   tags = {
