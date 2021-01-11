@@ -2,6 +2,14 @@ provider "aws" {
   region = "eu-west-2"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "waqas.tf"
+    key    = "tf.tfstate"
+    region = "eu-west-2"
+  }
+}
+
 resource "aws_s3_bucket" "kyo" {
   bucket = "lovetheebucket"
   acl    = "private"
