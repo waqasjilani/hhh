@@ -1,11 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "waqas.tf"
-    key    = "tf.tfstate"
-    region = "eu-west-2"
-  }
-}
-
 provider "aws" {
   region = "eu-west-2"
 }
